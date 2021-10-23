@@ -1,28 +1,32 @@
 {
   "name": "socket-peer-video-call",
-  "version": "1.0.0",
-  "description": "Video call app using socket and peer js",
-  "main": "server.js",
+  "version": "0.0.1",
+  "description": "A conference call implementation using WebRTC, Socket.io and Node.js.",
+  "main": "src/app.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "serve-favicon": "^2.5.0",
+    "socket.io": "^2.4.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  },
   "scripts": {
-    "start": "pm2 start server.js"
+    "watch": "nodemon --watch \"src/\" --exec \"node src/app.js\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/tarunupadhyay11/socket-peer-video-call.git"
   },
-  "author": "Tarun Upadhyay <tarunsmtgroup@gmail.com> (https://smtgroup.in/)",
+  "keywords": [
+    "LiveStream",
+    "Server"
+  ],
+  "author": "Tarun Upadhyay <tarunupadhyay011@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/tarunupadhyay11/socket-peer-video-call/issues"
+    "url": "https://github.com/tarunupadhyay11/socket-peer-video-call.git/issues"
   },
-  "homepage": "https://github.com/tarunupadhyay11/socket-peer-video-call#readme",
-  "dependencies": {
-    "ejs": "^3.1.6",
-    "express": "^4.17.1",
-    "nodemon": "^2.0.14",
-    "peer": "^0.6.1",
-    "pm2": "^5.1.2",
-    "socket.io": "^4.3.1",
-    "uuid": "^8.3.2"
-  }
+  "homepage": "https://github.com/tarunupadhyay11/socket-peer-video-call.git#readme"
 }
